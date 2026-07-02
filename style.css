@@ -1,77 +1,59 @@
-// Countdown
-const targetDate = new Date("June 15, 2027 09:00:00").getTime();
-
-const timer = setInterval(() => {
-
-const now = new Date().getTime();
-
-const distance = targetDate - now;
-
-const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-const hours = Math.floor(
-(distance % (1000 * 60 * 60 * 24)) /
-(1000 * 60 * 60)
-);
-
-const minutes = Math.floor(
-(distance % (1000 * 60 * 60)) /
-(1000 * 60)
-);
-
-const seconds = Math.floor(
-(distance % (1000 * 60)) / 1000
-);
-
-document.getElementById("days").innerHTML = days;
-document.getElementById("hours").innerHTML = hours;
-document.getElementById("minutes").innerHTML = minutes;
-document.getElementById("seconds").innerHTML = seconds;
-
-if(distance < 0){
-
-clearInterval(timer);
-
-document.getElementById("countdown").innerHTML =
-"<h2>Hari Bahagia Telah Tiba ❤️</h2>";
-
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-},1000);
-
-// Wedding Gift Popup
-function giftPopup(){
-
-document.getElementById("giftModal").style.display="flex";
-
+body{
+font-family:'Poppins',sans-serif;
+background:#F7F3EF;
+color:#4A352A;
 }
 
-function closeGift(){
-
-document.getElementById("giftModal").style.display="none";
-
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("IMG_20260702_222318_607.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
 }
 
-window.onclick=function(e){
-
-const modal=document.getElementById("giftModal");
-
-if(e.target==modal){
-
-modal.style.display="none";
-
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.15);
 }
 
+.hero-content{
+position:relative;
+z-index:2;
+color:#fff;
+padding:20px;
 }
 
-// Nama tamu otomatis
-const params=new URLSearchParams(window.location.search);
+.logo{
+font-size:38px;
+color:#E8C27A;
+margin-bottom:20px;
+}
 
-const guest=params.get("to");
+.hero h1{
+font-size:60px;
+margin:20px 0;
+}
 
-if(guest){
-
-document.getElementById("guestName").innerHTML=
-decodeURIComponent(guest.replace(/\+/g," "));
-
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#B88A58;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+margin-top:20px;
 }
