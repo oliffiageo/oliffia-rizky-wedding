@@ -1,57 +1,77 @@
-body{
-margin:0;
-font-family:Poppins,sans-serif;
-background:#f7f3ef;
-color:#4b3427;
+// Countdown
+const targetDate = new Date("June 15, 2027 09:00:00").getTime();
+
+const timer = setInterval(() => {
+
+const now = new Date().getTime();
+
+const distance = targetDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24)) /
+(1000 * 60 * 60)
+);
+
+const minutes = Math.floor(
+(distance % (1000 * 60 * 60)) /
+(1000 * 60)
+);
+
+const seconds = Math.floor(
+(distance % (1000 * 60)) / 1000
+);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+if(distance < 0){
+
+clearInterval(timer);
+
+document.getElementById("countdown").innerHTML =
+"<h2>Hari Bahagia Telah Tiba ❤️</h2>";
+
 }
 
-.hero-cover{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:30px;
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("IMG_20260702_222318_607.jpg");
-background-size:cover;
-background-position:center;
-color:white;
+},1000);
+
+// Wedding Gift Popup
+function giftPopup(){
+
+document.getElementById("giftModal").style.display="flex";
+
 }
 
-.hero-cover h1{
-font-size:58px;
-font-family:Georgia,serif;
-margin:10px 0;
+function closeGift(){
+
+document.getElementById("giftModal").style.display="none";
+
 }
 
-.hero-cover h3{
-letter-spacing:5px;
-font-weight:400;
+window.onclick=function(e){
+
+const modal=document.getElementById("giftModal");
+
+if(e.target==modal){
+
+modal.style.display="none";
+
 }
 
-.button{
-display:inline-block;
-margin-top:25px;
-padding:15px 35px;
-border-radius:40px;
-background:#b58b5d;
-color:white;
-text-decoration:none;
-font-weight:bold;
 }
 
-.section{
-padding:60px 25px;
-}
+// Nama tamu otomatis
+const params=new URLSearchParams(window.location.search);
 
-.card{
-max-width:700px;
-margin:auto;
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.1);
+const guest=params.get("to");
+
+if(guest){
+
+document.getElementById("guestName").innerHTML=
+decodeURIComponent(guest.replace(/\+/g," "));
+
 }
