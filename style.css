@@ -1,1 +1,46 @@
-/* Style akan kita isi nanti */
+body{
+  margin:0;
+  font-family:Georgia,serif;
+  background:#f8f5f2;
+  color:#3b2a26;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:30px;
+  background:linear-gradient(rgba(47,26,24,.45),rgba(47,26,24,.45)),
+  url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600');
+  background-size:cover;
+  background-position:center;
+  color:white;
+}
+
+h1{
+  font-size:52px;
+  margin:0;
+}
+
+.button{
+  background:#a66a4a;
+  color:white;
+  padding:14px 28px;
+  border-radius:50px;
+  text-decoration:none;
+  margin-top:25px;
+}
+
+.section{
+  padding:60px 25px;
+}
+
+.card{
+  background:white;
+  border-radius:20px;
+  padding:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
