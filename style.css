@@ -57,3 +57,72 @@ text-decoration:none;
 border-radius:40px;
 margin-top:20px;
 }
+.small{
+letter-spacing:4px;
+font-size:15px;
+text-transform:uppercase;
+margin-bottom:15px;
+color:#F8E8C8;
+}
+
+.hero h1 span{
+display:block;
+font-size:30px;
+margin:8px 0;
+color:#E8C27A;
+}
+
+.tagline{
+font-size:18px;
+font-style:italic;
+line-height:1.7;
+margin-top:15px;
+color:#fff;
+}
+
+.date{
+font-size:22px;
+font-weight:600;
+margin:25px 0;
+color:#F6D38D;
+}
+
+.btn{
+transition:.3s;
+font-weight:600;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.btn:hover{
+background:#9E7347;
+transform:translateY(-3px);
+}
+
+#mempelai{
+padding:80px 25px;
+text-align:center;
+background:#fff;
+}
+
+#mempelai h2{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+color:#6A4835;
+margin-bottom:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero h1 span{
+font-size:24px;
+}
+
+.tagline{
+font-size:16px;
+}
+
+}
