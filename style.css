@@ -273,3 +273,45 @@ margin-bottom:20px;
 color:#B88A58;
 font-size:22px;
   }
+#countdown{
+padding:80px 20px;
+background:#fff;
+text-align:center;
+}
+
+#countdown h2{
+font-family:'Cormorant Garamond',serif;
+font-size:44px;
+color:#6A4835;
+margin-bottom:40px;
+}
+
+.countdown-box{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.time{
+width:90px;
+height:90px;
+background:#B88A58;
+border-radius:18px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.time span{
+font-size:28px;
+font-weight:bold;
+}
+
+.time p{
+font-size:14px;
+margin-top:5px;
+}
