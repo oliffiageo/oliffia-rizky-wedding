@@ -42,11 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const bgMusic = document.getElementById("bgMusic");
 
-document.body.addEventListener("pointerdown", async () => {
-  try {
-    await bgMusic.play();
-    console.log("Music started");
-  } catch (e) {
-    console.log(e);
-  }
-}, { once: true });
+window.addEventListener("load", () => {
+  document.body.addEventListener("click", () => {
+    bgMusic.play();
+  }, { once: true });
+});
