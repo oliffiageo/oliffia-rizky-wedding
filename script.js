@@ -40,11 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(createFlower, 600);
 
-});
 const bgMusic = document.getElementById("bgMusic");
 
-document.addEventListener("click", function () {
-    if (bgMusic.paused) {
-        bgMusic.play();
-    }
+document.body.addEventListener("pointerdown", async () => {
+  try {
+    await bgMusic.play();
+    console.log("Music started");
+  } catch (e) {
+    console.log(e);
+  }
 }, { once: true });
