@@ -565,3 +565,28 @@ margin:6px 0;
 .rsvp-btn:hover{
     background:#8F6845;
 }
+#footer{
+    background:#6A4835;
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+#footer h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+#footer p{
+    max-width:650px;
+    margin:10px auto;
+    line-height:1.8;
+    font-size:17px;
+}
+
+#footer h3{
+    margin-top:35px;
+    font-size:30px;
+    color:#E8D7C2;
+}
