@@ -191,3 +191,45 @@ font-size:42px;
 }
 
 }
+.person-card{
+max-width:340px;
+margin:50px auto;
+text-align:center;
+}
+
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #D8B16C;
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+display:block;
+margin:auto;
+}
+
+.person-card h3{
+margin-top:25px;
+font-size:32px;
+font-family:'Cormorant Garamond',serif;
+color:#6A4835;
+}
+
+.person-card p{
+margin:10px 0;
+font-size:17px;
+color:#666;
+}
+
+.person-card h4{
+font-size:22px;
+color:#4A352A;
+margin:8px 0;
+}
+
+.love-icon{
+font-size:48px;
+text-align:center;
+color:#C69A57;
+margin:10px 0;
+}
