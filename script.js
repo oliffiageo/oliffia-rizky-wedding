@@ -41,3 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(createFlower, 600);
 
 });
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", function () {
+    if (bgMusic.paused) {
+        bgMusic.play();
+    }
+}, { once: true });
