@@ -126,3 +126,68 @@ font-size:16px;
 }
 
 }
+.couple{
+max-width:900px;
+margin:60px auto 0;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.person{
+width:300px;
+text-align:center;
+}
+
+.person img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid #D6B06A;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+margin-bottom:20px;
+}
+
+.person h3{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+color:#6A4835;
+margin-bottom:15px;
+}
+
+.person p{
+font-size:17px;
+line-height:1.8;
+color:#555;
+}
+
+.love{
+font-size:60px;
+color:#C69A57;
+font-family:'Cormorant Garamond',serif;
+}
+
+@media(max-width:768px){
+
+.couple{
+flex-direction:column;
+gap:25px;
+}
+
+.person{
+width:100%;
+}
+
+.person img{
+width:180px;
+height:180px;
+}
+
+.love{
+font-size:42px;
+}
+
+}
