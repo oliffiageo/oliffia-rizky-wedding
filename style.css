@@ -233,3 +233,43 @@ text-align:center;
 color:#C69A57;
 margin:10px 0;
 }
+#quote{
+padding:80px 25px;
+background:#F7F3EF;
+}
+
+.quote-card{
+max-width:850px;
+margin:auto;
+background:white;
+padding:45px 30px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.quote-card h2{
+font-size:30px;
+color:#B88A58;
+margin-bottom:25px;
+}
+
+.arab{
+font-size:30px;
+line-height:2;
+color:#4A352A;
+margin-bottom:25px;
+}
+
+.arti{
+font-size:17px;
+line-height:1.9;
+color:#666;
+font-style:italic;
+margin-bottom:20px;
+}
+
+.quote-card h4{
+color:#B88A58;
+font-size:22px;
+  }
